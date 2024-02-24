@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chessboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px; /* Adjust the size proportionally to the cell size change */
+    height: 560px; /* Adjust the size proportionally to the cell size change */
+    border: 2px solid #000;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    width: 70px; /* Adjust cell size */
+    height: 70px; /* Adjust cell size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Adjust font size for "X" */
+    font-weight: bolder;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: #000;
+    color: #fff; /* Ensures the "X" is visible on black squares */
+}
+
+.button-row {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    padding: 20px; /* Add some space above the buttons */
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: darkgreen;
+}
